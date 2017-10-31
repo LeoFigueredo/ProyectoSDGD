@@ -3305,33 +3305,33 @@
 					annotation 	8
 					autoResize 	TRUE)
 				    (object AssociationViewNew "" @153
-					location   	(575, 380)
+					location   	(571, 383)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"59CAEA5F02C2"
 					roleview_list 	(list RoleViews
 					    (object RoleView "" @154
 						Parent_View 	@153
-						location   	(207, -388)
+						location   	(203, -385)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"59CAEA6002E0"
 						client     	@153
 						supplier   	@150
 						vertices   	(list Points
-						    (575, 380)
-						    (719, 289))
+						    (571, 383)
+						    (761, 263))
 						line_style 	0)
 					    (object RoleView "" @155
 						Parent_View 	@153
-						location   	(207, -388)
+						location   	(203, -385)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"59CAEA6002E3"
 						client     	@153
 						supplier   	@152
 						vertices   	(list Points
-						    (575, 380)
+						    (571, 383)
 						    (381, 504))
 						line_style 	0)))
 				    (object AssociationViewNew "" @156
@@ -3350,7 +3350,7 @@
 						supplier   	@151
 						vertices   	(list Points
 						    (622, 593)
-						    (866, 635))
+						    (864, 635))
 						line_style 	0)
 					    (object RoleView "" @158
 						Parent_View 	@156
@@ -3362,7 +3362,7 @@
 						supplier   	@152
 						vertices   	(list Points
 						    (622, 593)
-						    (381, 550))
+						    (381, 551))
 						line_style 	0)))
 				    (object ClassView "Class" "Use Case View::Casos de Uso de Requerimientos::Usuario del Sistema" @159
 					ShowCompartmentStereotypes 	TRUE
@@ -3467,7 +3467,7 @@
 					    default_color 	TRUE)
 					stereotype 	(object SegLabel @164
 					    Parent_View 	@163
-					    location   	(1550, 1081)
+					    location   	(1546, 1083)
 					    font       	(object Font
 						size       	9
 						face       	"Arial"
@@ -3491,7 +3491,7 @@
 					client     	@149
 					supplier   	@160
 					vertices   	(list Points
-					    (1951, 847)
+					    (1962, 845)
 					    (1068, 1115))
 					line_style 	0)
 				    (object DependencyView "" @165
@@ -3623,7 +3623,7 @@
 						supplier   	@160
 						vertices   	(list Points
 						    (613, 1152)
-						    (848, 1152))
+						    (850, 1152))
 						line_style 	0)))
 				    (object InheritView "" @172
 					stereotype 	TRUE
@@ -3650,7 +3650,7 @@
 				zoom       	100
 				max_height 	28350
 				max_width  	21600
-				origin_x   	1174
+				origin_x   	1087
 				origin_y   	0
 				items      	(list diagram_item_list
 				    (object UseCaseView "Use Case View::Casos de Uso de Requerimientos::Administrar Usuarios" @173
@@ -30378,8 +30378,1133 @@
 			    (object Class_Category "Administrar Proceso de Negocio"
 				quid       	"59F785510393"
 				exportControl 	"Public"
-				logical_models 	(list unit_reference_list)
-				logical_presentations 	(list unit_reference_list))
+				logical_models 	(list unit_reference_list
+				    (object Class "I_Consultar_Proceso_Negocio"
+					quid       	"59F7994B0313"
+					stereotype 	"boundary")
+				    (object Class "G_Consultar_Proceso_Negocio"
+					quid       	"59F799EA0218"
+					stereotype 	"control")
+				    (object Class "Proceso Negocio"
+					quid       	"59F79A4400FD"
+					stereotype 	"entity")
+				    (object Class "Documento"
+					quid       	"59F7AF180061"
+					stereotype 	"entity")
+				    (object Association "$UNNAMED$189"
+					quid       	"59F799DF034F"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$190"
+						quid       	"59F799E00285"
+						supplier   	"Use Case View::Casos de Uso de Requerimientos::Administrador"
+						quidu      	"59C4177F0349"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$191"
+						quid       	"59F799E0028B"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::I_Consultar_Proceso_Negocio"
+						quidu      	"59F7994B0313"
+						is_navigable 	TRUE)))
+				    (object Association "$UNNAMED$192"
+					quid       	"59F799EE00AE"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$193"
+						quid       	"59F799EE0246"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::G_Consultar_Proceso_Negocio"
+						quidu      	"59F799EA0218"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$194"
+						quid       	"59F799EE024A"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::I_Consultar_Proceso_Negocio"
+						quidu      	"59F7994B0313"
+						is_navigable 	TRUE)))
+				    (object Association "$UNNAMED$195"
+					quid       	"59F7AA1B02E9"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$196"
+						quid       	"59F7AA1C0165"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::G_Consultar_Proceso_Negocio"
+						quidu      	"59F799EA0218"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$197"
+						quid       	"59F7AA1C016F"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Proceso Negocio"
+						quidu      	"59F79A4400FD"
+						is_navigable 	TRUE)))
+				    (object Association "$UNNAMED$198"
+					quid       	"59F7AF27030F"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$199"
+						quid       	"59F7AF280127"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::G_Consultar_Proceso_Negocio"
+						quidu      	"59F799EA0218"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$200"
+						quid       	"59F7AF28012E"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Documento"
+						quidu      	"59F7AF180061"
+						is_navigable 	TRUE)))
+				    (object Association "$UNNAMED$201"
+					quid       	"59F7BB34038C"
+					roles      	(list role_list
+					    (object Role "$UNNAMED$202"
+						quid       	"59F7BB360060"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Documento"
+						quidu      	"59F7AF180061"
+						is_navigable 	TRUE)
+					    (object Role "$UNNAMED$203"
+						quid       	"59F7BB360063"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Proceso Negocio"
+						quidu      	"59F79A4400FD"
+						is_navigable 	TRUE
+						is_aggregate 	TRUE)))
+				    (object Association "$UNNAMED$204"
+					quid       	"59F7BB460337"
+					roles      	(list role_list
+					    (object Role "1"
+						quid       	"59F7BB4701A6"
+						label      	"1"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Proceso Negocio"
+						quidu      	"59F79A4400FD"
+						is_navigable 	TRUE)
+					    (object Role "1..n"
+						quid       	"59F7BB4701AD"
+						label      	"1..n"
+						supplier   	"Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Documento"
+						quidu      	"59F7AF180061"
+						is_navigable 	TRUE
+						is_aggregate 	TRUE))))
+				logical_presentations 	(list unit_reference_list
+				    (object ClassDiagram "Crear Proceso de Negocio"
+					quid       	"59F798AB0029"
+					title      	"Crear Proceso de Negocio"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	209
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "Use Case View::Casos de Uso de Requerimientos::Administrador" @1472
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(432, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1472
+						    location   	(432, 736)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	483
+						    justify    	0
+						    label      	"Administrador")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"59C4177F0349"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::I_Consultar_Proceso_Negocio" @1473
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1040, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1473
+						    location   	(1039, 732)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	652
+						    justify    	0
+						    label      	"I_Consultar_Proceso_Negocio")
+						icon       	"boundary"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F7994B0313"
+						width      	230
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$189" @1474
+						location   	(707, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799DF034F"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$190" @1475
+							Parent_View 	@1474
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E00285"
+							client     	@1474
+							supplier   	@1472
+							vertices   	(list Points
+							    (707, 576)
+							    (489, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$191" @1476
+							Parent_View 	@1474
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E0028B"
+							client     	@1474
+							supplier   	@1473
+							vertices   	(list Points
+							    (707, 576)
+							    (926, 576))
+							line_style 	0)))
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::G_Consultar_Proceso_Negocio" @1477
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1600, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1477
+						    location   	(1599, 737)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	436
+						    justify    	0
+						    label      	"G_Consultar_Proceso_Negocio")
+						icon       	"control"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F799EA0218"
+						width      	158
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$192" @1478
+						location   	(1337, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799EE00AE"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$193" @1479
+							Parent_View 	@1478
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE0246"
+							client     	@1478
+							supplier   	@1477
+							vertices   	(list Points
+							    (1337, 576)
+							    (1522, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$194" @1480
+							Parent_View 	@1478
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE024A"
+							client     	@1478
+							supplier   	@1473
+							vertices   	(list Points
+							    (1337, 576)
+							    (1152, 576))
+							line_style 	0)))
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Documento" @1481
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(2240, 832)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1481
+						    location   	(2240, 988)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	432
+						    justify    	0
+						    label      	"Documento")
+						icon       	"entity"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F7AF180061"
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$198" @1482
+						location   	(1992, 731)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F7AF27030F"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$199" @1483
+							Parent_View 	@1482
+							location   	(-232, -21)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AF280127"
+							client     	@1482
+							supplier   	@1477
+							vertices   	(list Points
+							    (1992, 731)
+							    (1821, 663))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$200" @1484
+							Parent_View 	@1482
+							location   	(-232, -21)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AF28012E"
+							client     	@1482
+							supplier   	@1481
+							vertices   	(list Points
+							    (1992, 731)
+							    (2163, 799))
+							line_style 	0)))
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Proceso Negocio" @1485
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(2240, 352)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1485
+						    location   	(2240, 508)
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	427
+						    justify    	0
+						    label      	"Proceso Negocio")
+						icon       	"entity"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F79A4400FD"
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$195" @1486
+						location   	(1919, 459)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F7AA1B02E9"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$196" @1487
+							Parent_View 	@1486
+							location   	(-337, -85)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C0165"
+							client     	@1486
+							supplier   	@1477
+							vertices   	(list Points
+							    (1919, 459)
+							    (1676, 545))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$197" @1488
+							Parent_View 	@1486
+							location   	(-337, -85)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C016F"
+							client     	@1486
+							supplier   	@1485
+							vertices   	(list Points
+							    (1919, 459)
+							    (2163, 374))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$204" @1489
+						location   	(2240, 643)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F7BB460337"
+						roleview_list 	(list RoleViews
+						    (object RoleView "1" @1490
+							Parent_View 	@1489
+							location   	(0, -189)
+							font       	(object Font
+							    size       	9
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							label      	(object SegLabel @1491
+							    Parent_View 	@1490
+							    location   	(2199, 554)
+							    font       	(object Font
+								size       	9
+								face       	"Arial"
+								bold       	FALSE
+								italics    	FALSE
+								underline  	FALSE
+								strike     	FALSE
+								color      	0
+								default_color 	TRUE)
+							    anchor     	1
+							    anchor_loc 	1
+							    nlines     	1
+							    max_width  	60
+							    justify    	0
+							    label      	"+1"
+							    pctDist    	0.800000
+							    height     	42
+							    orientation 	0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7BB4701A6"
+							client     	@1489
+							supplier   	@1485
+							vertices   	(list Points
+							    (2240, 643)
+							    (2240, 531))
+							line_style 	0)
+						    (object RoleView "1..n" @1492
+							Parent_View 	@1489
+							location   	(0, -189)
+							font       	(object Font
+							    size       	9
+							    face       	"Arial"
+							    bold       	FALSE
+							    italics    	FALSE
+							    underline  	FALSE
+							    strike     	FALSE
+							    color      	0
+							    default_color 	TRUE)
+							label      	(object SegLabel @1493
+							    Parent_View 	@1492
+							    location   	(2199, 732)
+							    font       	(object Font
+								size       	9
+								face       	"Arial"
+								bold       	FALSE
+								italics    	FALSE
+								underline  	FALSE
+								strike     	FALSE
+								color      	0
+								default_color 	TRUE)
+							    anchor     	1
+							    anchor_loc 	1
+							    nlines     	1
+							    max_width  	100
+							    justify    	0
+							    label      	"+1..n"
+							    pctDist    	0.800000
+							    height     	42
+							    orientation 	1)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7BB4701AD"
+							client     	@1489
+							supplier   	@1481
+							vertices   	(list Points
+							    (2240, 643)
+							    (2240, 755))
+							line_style 	0)))))
+				    (object ClassDiagram "Consultar Proceso de Negocio"
+					quid       	"59F798DD0012"
+					title      	"Consultar Proceso de Negocio"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "Use Case View::Casos de Uso de Requerimientos::Administrador" @1494
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(432, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1494
+						    location   	(432, 736)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	536
+						    justify    	0
+						    label      	"Administrador")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"59C4177F0349"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::I_Consultar_Proceso_Negocio" @1495
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1040, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1495
+						    location   	(1039, 732)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	654
+						    justify    	0
+						    label      	"I_Consultar_Proceso_Negocio")
+						icon       	"boundary"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F7994B0313"
+						width      	230
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::G_Consultar_Proceso_Negocio" @1496
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1600, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1496
+						    location   	(1599, 737)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	438
+						    justify    	0
+						    label      	"G_Consultar_Proceso_Negocio")
+						icon       	"control"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F799EA0218"
+						width      	158
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Proceso Negocio" @1497
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(2240, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1497
+						    location   	(2240, 732)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	435
+						    justify    	0
+						    label      	"Proceso Negocio")
+						icon       	"entity"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F79A4400FD"
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$189" @1498
+						location   	(707, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799DF034F"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$190" @1499
+							Parent_View 	@1498
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E00285"
+							client     	@1498
+							supplier   	@1494
+							vertices   	(list Points
+							    (707, 576)
+							    (489, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$191" @1500
+							Parent_View 	@1498
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E0028B"
+							client     	@1498
+							supplier   	@1495
+							vertices   	(list Points
+							    (707, 576)
+							    (926, 576))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$192" @1501
+						location   	(1337, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799EE00AE"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$193" @1502
+							Parent_View 	@1501
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE0246"
+							client     	@1501
+							supplier   	@1496
+							vertices   	(list Points
+							    (1337, 576)
+							    (1522, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$194" @1503
+							Parent_View 	@1501
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE024A"
+							client     	@1501
+							supplier   	@1495
+							vertices   	(list Points
+							    (1337, 576)
+							    (1152, 576))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$195" @1504
+						location   	(1919, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F7AA1B02E9"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$196" @1505
+							Parent_View 	@1504
+							location   	(-337, 32)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C0165"
+							client     	@1504
+							supplier   	@1496
+							vertices   	(list Points
+							    (1919, 576)
+							    (1676, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$197" @1506
+							Parent_View 	@1504
+							location   	(-337, 32)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C016F"
+							client     	@1504
+							supplier   	@1497
+							vertices   	(list Points
+							    (1919, 576)
+							    (2163, 576))
+							line_style 	0)))))
+				    (object ClassDiagram "Modificar Proceso de Negocio"
+					quid       	"59F798ED022C"
+					title      	"Modificar Proceso de Negocio"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "Use Case View::Casos de Uso de Requerimientos::Administrador" @1507
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(432, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1507
+						    location   	(432, 736)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	536
+						    justify    	0
+						    label      	"Administrador")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"59C4177F0349"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::I_Consultar_Proceso_Negocio" @1508
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1040, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1508
+						    location   	(1039, 732)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	654
+						    justify    	0
+						    label      	"I_Consultar_Proceso_Negocio")
+						icon       	"boundary"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F7994B0313"
+						width      	230
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::G_Consultar_Proceso_Negocio" @1509
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1600, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1509
+						    location   	(1599, 737)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	438
+						    justify    	0
+						    label      	"G_Consultar_Proceso_Negocio")
+						icon       	"control"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F799EA0218"
+						width      	158
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Proceso Negocio" @1510
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(2240, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1510
+						    location   	(2240, 732)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	435
+						    justify    	0
+						    label      	"Proceso Negocio")
+						icon       	"entity"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F79A4400FD"
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$189" @1511
+						location   	(707, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799DF034F"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$190" @1512
+							Parent_View 	@1511
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E00285"
+							client     	@1511
+							supplier   	@1507
+							vertices   	(list Points
+							    (707, 576)
+							    (489, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$191" @1513
+							Parent_View 	@1511
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E0028B"
+							client     	@1511
+							supplier   	@1508
+							vertices   	(list Points
+							    (707, 576)
+							    (926, 576))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$192" @1514
+						location   	(1337, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799EE00AE"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$193" @1515
+							Parent_View 	@1514
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE0246"
+							client     	@1514
+							supplier   	@1509
+							vertices   	(list Points
+							    (1337, 576)
+							    (1522, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$194" @1516
+							Parent_View 	@1514
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE024A"
+							client     	@1514
+							supplier   	@1508
+							vertices   	(list Points
+							    (1337, 576)
+							    (1152, 576))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$195" @1517
+						location   	(1919, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F7AA1B02E9"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$196" @1518
+							Parent_View 	@1517
+							location   	(-337, 32)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C0165"
+							client     	@1517
+							supplier   	@1509
+							vertices   	(list Points
+							    (1919, 576)
+							    (1676, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$197" @1519
+							Parent_View 	@1517
+							location   	(-337, 32)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C016F"
+							client     	@1517
+							supplier   	@1510
+							vertices   	(list Points
+							    (1919, 576)
+							    (2163, 576))
+							line_style 	0)))))
+				    (object ClassDiagram "Eliminar Proceso de Negocio"
+					quid       	"59F798FF024B"
+					title      	"Eliminar Proceso de Negocio"
+					zoom       	100
+					max_height 	28350
+					max_width  	21600
+					origin_x   	0
+					origin_y   	0
+					items      	(list diagram_item_list
+					    (object ClassView "Class" "Use Case View::Casos de Uso de Requerimientos::Administrador" @1520
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(432, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1520
+						    location   	(432, 736)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	536
+						    justify    	0
+						    label      	"Administrador")
+						icon       	"Actor"
+						icon_style 	"Icon"
+						line_color 	3342489
+						quidu      	"59C4177F0349"
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::I_Consultar_Proceso_Negocio" @1521
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1040, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1521
+						    location   	(1039, 732)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	654
+						    justify    	0
+						    label      	"I_Consultar_Proceso_Negocio")
+						icon       	"boundary"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F7994B0313"
+						width      	230
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::G_Consultar_Proceso_Negocio" @1522
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(1600, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1522
+						    location   	(1599, 737)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	438
+						    justify    	0
+						    label      	"G_Consultar_Proceso_Negocio")
+						icon       	"control"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F799EA0218"
+						width      	158
+						annotation 	8
+						autoResize 	TRUE)
+					    (object ClassView "Class" "Logical View::Analysis Model::Administrar Parámetros::Administrar Proceso de Negocio::Proceso Negocio" @1523
+						ShowCompartmentStereotypes 	TRUE
+						IncludeAttribute 	TRUE
+						IncludeOperation 	TRUE
+						location   	(2240, 576)
+						font       	(object Font
+						    size       	9
+						    face       	"Arial"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@1523
+						    location   	(2240, 732)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	435
+						    justify    	0
+						    label      	"Proceso Negocio")
+						icon       	"entity"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"59F79A4400FD"
+						height     	154
+						annotation 	8
+						autoResize 	TRUE)
+					    (object AssociationViewNew "$UNNAMED$189" @1524
+						location   	(707, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799DF034F"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$190" @1525
+							Parent_View 	@1524
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E00285"
+							client     	@1524
+							supplier   	@1520
+							vertices   	(list Points
+							    (707, 576)
+							    (489, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$191" @1526
+							Parent_View 	@1524
+							location   	(-413, -16)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799E0028B"
+							client     	@1524
+							supplier   	@1521
+							vertices   	(list Points
+							    (707, 576)
+							    (926, 576))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$192" @1527
+						location   	(1337, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F799EE00AE"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$193" @1528
+							Parent_View 	@1527
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE0246"
+							client     	@1527
+							supplier   	@1522
+							vertices   	(list Points
+							    (1337, 576)
+							    (1522, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$194" @1529
+							Parent_View 	@1527
+							location   	(297, 0)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F799EE024A"
+							client     	@1527
+							supplier   	@1521
+							vertices   	(list Points
+							    (1337, 576)
+							    (1152, 576))
+							line_style 	0)))
+					    (object AssociationViewNew "$UNNAMED$195" @1530
+						location   	(1919, 576)
+						stereotype 	TRUE
+						line_color 	3342489
+						quidu      	"59F7AA1B02E9"
+						roleview_list 	(list RoleViews
+						    (object RoleView "$UNNAMED$196" @1531
+							Parent_View 	@1530
+							location   	(-337, 32)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C0165"
+							client     	@1530
+							supplier   	@1522
+							vertices   	(list Points
+							    (1919, 576)
+							    (1676, 576))
+							line_style 	0)
+						    (object RoleView "$UNNAMED$197" @1532
+							Parent_View 	@1530
+							location   	(-337, 32)
+							stereotype 	TRUE
+							line_color 	3342489
+							quidu      	"59F7AA1C016F"
+							client     	@1530
+							supplier   	@1523
+							vertices   	(list Points
+							    (1919, 576)
+							    (2163, 576))
+							line_style 	0)))))))
 			    (object Class_Category "Admistrar Flujo de Trabajo"
 				quid       	"59F78568005A"
 				exportControl 	"Public"
@@ -30520,16 +31645,16 @@
 			
 			exportControl 	"Public"
 			logical_models 	(list unit_reference_list
-			    (object Association "$UNNAMED$189"
+			    (object Association "$UNNAMED$205"
 				quid       	"35409E9D02A8"
 				stereotype 	"realize"
 				roles      	(list role_list
-				    (object Role "$UNNAMED$190"
+				    (object Role "$UNNAMED$206"
 					quid       	"35409E9E0294"
 					supplier   	"::Use Cases::<Use Case Name>::<Use Case Name>"
 					quidu      	"34E37FB203D4"
 					is_navigable 	TRUE)
-				    (object Role "$UNNAMED$191"
+				    (object Role "$UNNAMED$207"
 					quid       	"35409E9E0295"
 					supplier   	"Logical View::Design Model::Use-Case Realizations::<Use-Case Name>::<Use-Case Name>"
 					quidu      	"352F38180276")))
@@ -30546,9 +31671,9 @@
 					
 					stereotype 	"use-case realization"
 					logical_models 	(list unit_reference_list
-					    (object Mechanism @1472
+					    (object Mechanism @1533
 						logical_models 	(list unit_reference_list))
-					    (object Mechanism @1473
+					    (object Mechanism @1534
 						logical_models 	(list unit_reference_list)))
 					logical_presentations 	(list unit_reference_list
 					    (object ClassDiagram "<Use Case Name> -  Realize Dependencies"
@@ -30572,7 +31697,7 @@
 						origin_y   	0
 						items      	(list diagram_item_list))
 					    (object InteractionDiagram "<Use Case Name> -  Basic Flow"
-						mechanism_ref 	@1472
+						mechanism_ref 	@1533
 						quid       	"35081E3603A2"
 						title      	"<Use Case Name> -  Basic Flow"
 						zoom       	100
@@ -30582,7 +31707,7 @@
 						origin_y   	0
 						items      	(list diagram_item_list))
 					    (object InteractionDiagram "<Use Case Name> -  <Flow Type>"
-						mechanism_ref 	@1473
+						mechanism_ref 	@1534
 						quid       	"3540A0B901AE"
 						title      	"<Use Case Name> -  <Flow Type>"
 						zoom       	100
@@ -30602,7 +31727,7 @@
 					origin_x   	0
 					origin_y   	0
 					items      	(list diagram_item_list
-					    (object NoteView @1474
+					    (object NoteView @1535
 						location   	(704, 144)
 						font       	(object Font
 						    size       	9
@@ -30614,7 +31739,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@1474
+						    Parent_View 	@1535
 						    location   	(38, 25)
 						    fill_color 	13434879
 						    nlines     	5
@@ -30628,7 +31753,7 @@
 						fill_color 	13434879
 						width      	1356
 						height     	250)
-					    (object UseCaseView "Logical View::Design Model::Use-Case Realizations::<Use-Case Name>::<Use-Case Name>" @1475
+					    (object UseCaseView "Logical View::Design Model::Use-Case Realizations::<Use-Case Name>::<Use-Case Name>" @1536
 						location   	(608, 960)
 						font       	(object Font
 						    size       	9
@@ -30640,7 +31765,7 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@1475
+						    Parent_View 	@1536
 						    location   	(608, 1148)
 						    anchor_loc 	1
 						    nlines     	2
@@ -30648,7 +31773,7 @@
 						    justify    	0
 						    label      	"<Use-Case Name>")
 						stereotype 	(object ItemLabel
-						    Parent_View 	@1475
+						    Parent_View 	@1536
 						    location   	(608, 1078)
 						    anchor     	10
 						    anchor_loc 	1
@@ -30676,16 +31801,16 @@
 				quid       	"35DB3CB002BC"
 				documentation 	"This is a sub-process or thread within the <name of process of which this thread is a sub-process> process which handles <enter a description of what this thread does>.  A separate thread was chosen for this to be able to <enter the rationale for creating a separate thread>."
 				stereotype 	"thread")
-			    (object Association "$UNNAMED$192"
+			    (object Association "$UNNAMED$208"
 				quid       	"35DB3E72017C"
 				roles      	(list role_list
-				    (object Role "$UNNAMED$193"
+				    (object Role "$UNNAMED$209"
 					quid       	"35DB3E73005A"
 					supplier   	"Logical View::Design Model::Process View::<Process Name>"
 					quidu      	"35DB3C8302D0"
 					is_navigable 	TRUE
 					is_aggregate 	TRUE)
-				    (object Role "$UNNAMED$194"
+				    (object Role "$UNNAMED$210"
 					quid       	"35DB3E730096"
 					supplier   	"Logical View::Design Model::Process View::<Thread Name>"
 					quidu      	"35DB3CB002BC"
@@ -30702,7 +31827,7 @@
 				origin_x   	0
 				origin_y   	0
 				items      	(list diagram_item_list
-				    (object ClassView "Class" "Logical View::Design Model::Process View::<Process Name>" @1476
+				    (object ClassView "Class" "Logical View::Design Model::Process View::<Process Name>" @1537
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -30717,7 +31842,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@1476
+					    Parent_View 	@1537
 					    location   	(122, 436)
 					    fill_color 	13434879
 					    nlines     	1
@@ -30725,7 +31850,7 @@
 					    justify    	0
 					    label      	"<Process Name>")
 					stereotype 	(object ItemLabel
-					    Parent_View 	@1476
+					    Parent_View 	@1537
 					    location   	(122, 389)
 					    fill_color 	13434879
 					    anchor     	10
@@ -30741,7 +31866,7 @@
 					height     	172
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Logical View::Design Model::Process View::<Thread Name>" @1477
+				    (object ClassView "Class" "Logical View::Design Model::Process View::<Thread Name>" @1538
 					ShowCompartmentStereotypes 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
@@ -30756,7 +31881,7 @@
 					    color      	0
 					    default_color 	TRUE)
 					label      	(object ItemLabel
-					    Parent_View 	@1477
+					    Parent_View 	@1538
 					    location   	(740, 436)
 					    fill_color 	13434879
 					    nlines     	1
@@ -30764,7 +31889,7 @@
 					    justify    	0
 					    label      	"<Thread Name>")
 					stereotype 	(object ItemLabel
-					    Parent_View 	@1477
+					    Parent_View 	@1538
 					    location   	(740, 389)
 					    fill_color 	13434879
 					    anchor     	10
@@ -30780,32 +31905,32 @@
 					height     	172
 					annotation 	8
 					autoResize 	TRUE)
-				    (object AssociationViewNew "$UNNAMED$192" @1478
+				    (object AssociationViewNew "$UNNAMED$208" @1539
 					location   	(596, 464)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"35DB3E72017C"
 					roleview_list 	(list RoleViews
-					    (object RoleView "$UNNAMED$193" @1479
-						Parent_View 	@1478
+					    (object RoleView "$UNNAMED$209" @1540
+						Parent_View 	@1539
 						location   	(-300, 0)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"35DB3E73005A"
-						client     	@1478
-						supplier   	@1476
+						client     	@1539
+						supplier   	@1537
 						vertices   	(list Points
 						    (596, 464)
 						    (463, 464))
 						line_style 	0)
-					    (object RoleView "$UNNAMED$194" @1480
-						Parent_View 	@1478
+					    (object RoleView "$UNNAMED$210" @1541
+						Parent_View 	@1539
 						location   	(-300, 0)
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"35DB3E730096"
-						client     	@1478
-						supplier   	@1477
+						client     	@1539
+						supplier   	@1538
 						vertices   	(list Points
 						    (596, 464)
 						    (730, 464))
@@ -30821,7 +31946,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @1481
+			    (object NoteView @1542
 				location   	(672, 304)
 				font       	(object Font
 				    size       	9
@@ -30833,7 +31958,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1481
+				    Parent_View 	@1542
 				    location   	(28, 19)
 				    fill_color 	13434879
 				    nlines     	13
@@ -30857,7 +31982,7 @@
 				fill_color 	13434879
 				width      	1313
 				height     	582)
-			    (object NoteView @1482
+			    (object NoteView @1543
 				location   	(1696, 160)
 				font       	(object Font
 				    size       	9
@@ -30869,7 +31994,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1482
+				    Parent_View 	@1543
 				    location   	(1358, 29)
 				    fill_color 	13434879
 				    nlines     	5
@@ -30905,7 +32030,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @1483
+			    (object NoteView @1544
 				location   	(576, 256)
 				font       	(object Font
 				    size       	9
@@ -30917,7 +32042,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1483
+				    Parent_View 	@1544
 				    location   	(44, 31)
 				    fill_color 	13434879
 				    nlines     	9
@@ -30937,7 +32062,7 @@
 				fill_color 	13434879
 				width      	1088
 				height     	463)
-			    (object NoteView @1484
+			    (object NoteView @1545
 				location   	(1520, 176)
 				font       	(object Font
 				    size       	9
@@ -30949,7 +32074,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1484
+				    Parent_View 	@1545
 				    location   	(1182, 45)
 				    fill_color 	13434879
 				    nlines     	5
@@ -30987,7 +32112,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object NoteView @1485
+		    (object NoteView @1546
 			location   	(768, 384)
 			font       	(object Font
 			    size       	9
@@ -30999,7 +32124,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1485
+			    Parent_View 	@1546
 			    location   	(121, 96)
 			    fill_color 	13434879
 			    nlines     	14
@@ -31059,7 +32184,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object NoteView @1486
+			    (object NoteView @1547
 				location   	(624, 160)
 				font       	(object Font
 				    size       	9
@@ -31071,7 +32196,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1486
+				    Parent_View 	@1547
 				    location   	(21, 26)
 				    fill_color 	13434879
 				    nlines     	5
@@ -31098,7 +32223,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object SubSysView "Component View::Implementation Model" @1487
+		    (object SubSysView "Component View::Implementation Model" @1548
 			location   	(736, 800)
 			font       	(object Font
 			    size       	9
@@ -31110,7 +32235,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1487
+			    Parent_View 	@1548
 			    location   	(552, 713)
 			    fill_color 	13434879
 			    nlines     	2
@@ -31173,7 +32298,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ProcessorView "<processor name>" @1488
+		    (object ProcessorView "<processor name>" @1549
 			location   	(512, 1056)
 			font       	(object Font
 			    size       	9
@@ -31185,7 +32310,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1488
+			    Parent_View 	@1549
 			    location   	(276, 900)
 			    nlines     	2
 			    max_width  	400
@@ -31196,7 +32321,7 @@
 			width      	475
 			height     	381
 			annotation 	3)
-		    (object DeviceView "<device name>" @1489
+		    (object DeviceView "<device name>" @1550
 			location   	(1040, 1056)
 			font       	(object Font
 			    size       	9
@@ -31208,7 +32333,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1489
+			    Parent_View 	@1550
 			    location   	(867, 950)
 			    nlines     	2
 			    max_width  	275
@@ -31219,16 +32344,16 @@
 			width      	350
 			height     	282
 			annotation 	0)
-		    (object ConnectionView "" @1490
+		    (object ConnectionView "" @1551
 			stereotype 	TRUE
 			quidu      	"34DBBD4B008C"
-			client     	@1488
-			supplier   	@1489
+			client     	@1549
+			supplier   	@1550
 			vertices   	(list Points
 			    (718, 1056)
 			    (865, 1056))
 			line_style 	0)
-		    (object NoteView @1491
+		    (object NoteView @1552
 			location   	(816, 304)
 			font       	(object Font
 			    size       	9
@@ -31240,7 +32365,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1491
+			    Parent_View 	@1552
 			    location   	(38, 29)
 			    fill_color 	13434879
 			    nlines     	11
