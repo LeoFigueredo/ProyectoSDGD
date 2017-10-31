@@ -1,0 +1,23 @@
+Correcciones
+
+1.1. Procesos de Negocio: Con esta funcionalidad podrá crear y mantener los procesos de negocio, para lo cual se
+podrá configurar dinámicamente los atributos de los procesos y la ruta del directorio del sistema operativo
+donde se va a almacenar los archivos e imágenes, a los cuales se les asignara los flujo de trabajos y los
+documentos digitales (Archivos e Imágenes). El proceso deberá contener un código de referencia, un nombre
+de proceso (Por ejemplo pagos, compras, etc.), descripción, la ruta donde se almacenara los documentos
+digitalizados y los datos del proceso (tipo de dato, nombre y tamaño).
+
+(Punto 1.1) Para mí: datos del proceso (tipo de dato, nombre y tamaño) se refiere a los datos de los documentos que necesita especificamente ese proceso de negocio.
+
+Correción preguntar: Administrar usuarios.
+
+Corregir los diagramas de secuencia y colaboración
+
+Preguntar: Si es valida la herencia de los roles de los usuarios del sistema.
+
+Modificar wireframe de generar estadísticas.
+
+Preguntar: En los diagramas de secuencia con herencias ¿cómo se colocan los actores?.
+
+Preguntar: ¿Entidades externas como unidades funcionales?
+
